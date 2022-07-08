@@ -2,6 +2,13 @@ import java.util.Random;
 
 public class HeadOrTail {
     public static void main(String args[]) {
+        
+        System.out.println("Who are you?");
+        Scanner scanner = new Scanner(System.in);
+        String name = scanner.nextLine();
+        System.out.println("Hello, " + name + "!");
+        scanner.close();
+
         System.out.println("Tossing a coin...");
         
         Random random = new Random();
