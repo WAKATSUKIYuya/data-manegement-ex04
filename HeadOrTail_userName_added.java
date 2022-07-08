@@ -1,8 +1,9 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class HeadOrTail {
     public static void main(String args[]) {
-        
+
         System.out.println("Who are you?");
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
@@ -28,10 +29,5 @@ public class HeadOrTail {
             }
         }
         System.out.println("Heads: " + headCount + ", Tails: " + tailCount);
-        
-        if (headCount > tailCount) {
-            System.out.println("You won");
-        }
-        else System.out.println("You lost");
     }
 }
